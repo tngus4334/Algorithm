@@ -5,6 +5,16 @@ input = [4, 6, 2, 9, 1]
 #    for j in range (5 - i):
 #        print(i + j)
 
+# 1 : 4, 6, 2, 9, 1
+#     -  -  -  -  -
+# 2 : 1, 6, 2, 9, 4
+#        -  -  -  -
+# 3 : 1, 2, 6, 9, 4
+#           -  -  -
+# 4 : 1, 2, 4, 9, 6
+#              -  -
+
+
 def selection_sort(array):
     n = len(array)
 

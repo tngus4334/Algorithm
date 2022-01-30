@@ -4,8 +4,8 @@ shop_orders = ["오뎅", "콜라", "만두"]
 
 # shop_orders가 shop_menus에 존재하는가
 def is_available_to_order(menus, orders):
-    menus.sort()
-    for order in orders:
+    menus.sort() # 정렬의 시간복잡도는 배열의 길이를 N이라고 한다면 O(N*log(N))
+    for order in orders: # O(M * logN)
         if not is_existing_target_number_binary(order, menus):
             return False
     return True

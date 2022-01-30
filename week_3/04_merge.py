@@ -27,4 +27,4 @@ def merge(array1, array2):
     return array_c
 
 
-print(merge(array_a, array_b))  # [1, 2, 3, 4, 5, 6, 7, 8] 가 되어야 합니다!
+print(merge(array_a, array_b))

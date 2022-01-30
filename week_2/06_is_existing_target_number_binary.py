@@ -2,6 +2,11 @@ finding_target = 14
 finding_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 
 
+#       [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+#1단계: 최솟값                시도값                          최댓값 -> 시돗값보다 14가 크다 up
+#2단계:                          최솟값      시도값           최댓값 -> up
+#3단계                                          최솟값시도값  최댓값 -> 찾았다 ! 함수끝남
+
 def is_existing_target_number_binary(target, array):
     current_min = 0
     current_max = len(array) - 1
